@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>I Spy</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    
+    <body>
+        
+        <div id="container">
+            
+            <div id="heading">
+                <h1>I Spy Game</h1>
+            </div>
+            
+            
+            <div id="buttons">
+                <button id="object1" type="image"><img id="image1" src="Photoshop/butterbeer.jpeg" height="80px" width="80px" alt="butterbeer"><p id="object1"><strong>Find this item</strong></p></button>
+                
+                <button id="object2" type="image"><img id="image2" src="Photoshop/hogwards.jpeg" height="80px" width="80px" alt="hogwards"><p id="object1"><strong>Find this item</strong></p></button>
+                
+                <button id="object3" type="image"><img id="image3" src="Photoshop/deathlyhollows.jpeg" height="80px" width="80px" alt="deathly hollows"><p id="object1"><strong>Find this item</strong></p></button>
+                
+                <button id="object4" type="image"><img id="image4" src="Photoshop/gobletfire.jpeg" height="80px" width="80px" alt="goblet of fire"><p id="object1"><strong>Find this item</strong></p></button>
+                
+                <button id="object5" type="image"><img id="image5" src="Photoshop/sortinghat.jpeg" height="80px" width="80px" alt="sorting hat"><p id="object1"><strong>Find this item</strong></p></button>
+                
+            </div>
+            
+             <div id="background" type="image">
+                 
+                 <img id="bg1" src="Photoshop/ispy.png" height="700px" width="700px" alt="ispy">
+            
+                 
+                 <img id="spy1" src="Photoshop/butterbeer.jpeg" height="80px" width="80px" alt="butterbeer">
+                 
+                 <img id="spy2" src="Photoshop/hogwards.jpeg" height="80px" width="80px" alt="hogwards">
+                 
+                 <img id="spy3" src="Photoshop/deathlyhollows.jpeg" height="80px" width="80px" alt="deathly hollows">
+                 
+                 <img id="spy4" src="Photoshop/gobletfire.jpeg" height="80px" width="80px" alt="goblet of fire">
+                 
+                 <img id="spy5" src="Photoshop/sortinghat.jpeg" height="80px" width="80px" alt="sorting hat">
+            
+            </div>
+            
+            
+            
+        </div>
+        
+        
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        
+        
+        <script>
+
+            $("#spy1").click(function() {
+            $("#spy1").hide();
+            $("#heading").text("You found the butterbeer!!").css({"color": "gainsboro", "font-size": "40px", "font-weight": "bold", "padding-top": "30px", "padding-bottom": "30px"});
+            $("#object1").remove().on("click", "#spy1");
+            });
+            
+            $("#spy2").click(function() {
+            $("#spy2").hide();
+            $("#heading").text("You found the castle!!").css({"color": "gainsboro", "font-size": "40px", "font-weight": "bold", "padding-top": "30px", "padding-bottom": "30px"});
+            $("#object2").remove().on("click", "#spy2");
+            });
+            
+            $("#spy3").click(function() {
+            $("#spy3").hide();
+            $("#heading").text("You found the deathly hollows!!").css({"color": "gainsboro", "font-size": "40px", "font-weight": "bold", "padding-top": "30px", "padding-bottom": "30px"});
+            $("#object3").remove().on("click", "#spy3");
+            });
+            
+            $("#spy4").click(function() {
+            $("#spy4").hide();
+            $("#heading").text("You found the goblet of fire!!").css({"color": "gainsboro", "font-size": "40px", "font-weight": "bold", "padding-top": "30px", "padding-bottom": "30px"});
+            $("#object4").remove().on("click", "#spy4");
+            });
+            
+            $("#spy5").click(function() {
+            $("#spy5").hide();
+            $("#heading").text("You found the sorting hat!!").css({"color": "gainsboro", "font-size": "40px", "font-weight": "bold", "padding-top": "30px", "padding-bottom": "30px"});
+            $("#object5").remove().on("click", "#spy5");
+            });
+            
+            
+        </script>
+     
+    </body>
+</html>
