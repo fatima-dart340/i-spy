@@ -7,7 +7,7 @@ body{
     color: black;
     width: 860px;
     height: 1020px;
-    position: relative;
+    position: absolute;
     top: 10%;
     left: 20%;
     text-align: center;
